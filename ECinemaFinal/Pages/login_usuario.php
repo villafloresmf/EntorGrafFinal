@@ -11,7 +11,7 @@
 
 			<jsp:include page="cabecera.jsp" />
 			<div id='cont_central'>
-				<jsp:include page="menucostado.jsp" />
+				<!-- < ? include("navBar.php") ?> -->
 				<div id='columnaDercha' class='columnaDer'>
 
 					<div class='seccion'>
