@@ -1,0 +1,787 @@
+/* menu */
+
+body {
+  background: #2E2E2E;
+  text-align: center;
+}
+
+
+
+
+h1 {
+	display:block;
+	float:left;
+	color: #FF6633;
+	font-family: Arial;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;	
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px; 
+	height: 29px;
+}
+
+
+
+.seccion {
+	display: block;
+	width: 720px;
+	height: auto;
+	border: 0px;
+	border-color: #F2B800;
+	border-style: solid;
+	color: #FF6633;
+}
+
+
+.seccion h2 {
+	color: #FF6633;
+	font-family: Arial;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px; 
+	height: 29px;
+}
+
+.contenidos {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px; 
+	cursor: default;
+	
+}
+
+.contenidos h3{
+	display: block;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	margin: 0px;
+	padding: 1px;
+}
+
+.contenidos p{
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contenidos p b{
+	color: #FF6633;
+	font-weight: bold;
+}
+
+
+.contenidos p a {
+	color: #FF6633;
+	font-weight: normal;
+	text-decoration: none;
+}
+.contenidos p a:link{
+	text-decoration: none;
+}
+.contenidos p a:visited{
+	text-decoration: none;
+}
+.contenidos p a:active{
+	text-decoration: none;
+}
+.contenidos p a:hover{
+	text-decoration: underline;
+}
+
+
+
+.estilotabla {
+	width: 704px; 
+	border: 1px; 
+	border-color: #F2B800; 
+	border-style: solid; 
+	color: #FF6633;
+}
+
+
+/* Estilos Principal de la Pagina.--------------------------------------------------------------------------------------------------*/
+
+.columnaIzq {
+	float:left;
+	width:200px; 
+	height:420px; 
+	border: 0px;
+	padding:0px; 
+	margin:0px;
+}
+
+.columnaDer {
+	float:right;
+	width:730px;
+	height: auto;
+	border:1px;
+	border-style:solid;
+	padding:0px;
+	margin:0px;
+	background:#333333;
+}
+
+.recuadrosIzq {
+	border: 1px;
+	border-color: #000000;
+	border-style: solid;
+	
+	background: 2E2E2E;
+	/*background: #FFFFFF; */
+}
+
+.recuadrosIzq p{
+	/*color: #333333;*/
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	margin: 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.listTops h3{
+	display: block;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #FFFFFF;	
+	text-align: left;
+	text-decoration: none;
+	margin: 0px;
+	padding: 3px;
+	height: 29px;
+	
+	background: url('/ServletFinalJava/img/back_lists.png') repeat top left; 
+}
+
+.listTops p{
+	/*color: #333333;*/
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding: 4px; 
+}
+
+.listTops p b{
+	color: #FF6633;
+	font-weight: bold;
+}
+
+.listTops p a {
+	color: #FF6633;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.listTops p a:link{
+	text-decoration: none;
+}
+.listTops p a:visited{
+	text-decoration: none;
+}
+.listTops p a:active{
+	text-decoration: none;
+}
+.listTops p a:hover{
+	text-decoration: underline;
+}
+
+#recuadro_princ
+{
+	width:940px;
+	height: auto;
+	border:0px;
+	border-style:solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+#top_titulo {
+	width:730px;
+	height:35px;
+	text-align:left;
+	font-family:Arial;
+	font-size:18px;
+	color:#000000;
+	margin:0px;
+	padding:0px;
+}
+
+#cont_central {
+	width:940px;
+	height: auto;
+	border:1px;
+	border-style:solid;
+	padding:0px;
+	margin:0px;
+}
+	
+/* Nuevas peliculas y Series */
+.tops {
+	display: block;
+	width: 714px;
+	height: 340px;
+	background: url('/ServletFinalJava/img/fondo_rollo_pelicula_unidad_final.png') repeat top left;
+	
+			border: 0px;
+}
+
+.pelitops {
+	padding: 0px;
+	margin: 0px;
+	width: 172px;
+	height: 289px;
+	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	float: left;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	margin-right: 2px;
+	margin-left: 2px;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+
+	border: 1px;
+	border-color: #F2B800;
+	border-style: solid;
+}
+
+
+
+.pelitops img {
+	border: 0px;
+ 	width: 169px;
+	
+	z-index:1;
+}
+
+.pelitops .cont {
+	display: block;
+	padding: 0px;
+	width: 172px;
+	height: 69px;
+	border: 0px;
+	background: #000000;
+	
+	position: absolute;
+	top: 220px;
+	left: 0px;
+	z-index: 2;
+}
+
+.pelitops .titulo {
+	display: block;
+	color: #E6E6E6;
+	text-decoration: none;
+	text-align: left;
+	font-family:  Arial;
+	font-size: 9pt;
+	font-weight: bold;
+	border: 0px;
+	margin-left: 4px;
+	margin-right: 6px;
+	margin-top: 18px;
+	margin-bottom: 0px;
+	padding: 0px;
+
+	position: absolute;
+	top: 220px; 
+	left: 0px;
+	z-index: 3;
+	
+	border: 0px;
+
+}
+
+.pelitops .icono {
+	display: block;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	
+	position: absolute;
+	top: 220px;
+	left: 55px;
+	
+	z-index: 3;
+}
+
+.transp {filter: alpha(opacity=60); opacity: .6}
+
+/* Estilos propios para VER CONTENIDO DE UNA PELICULA.--------------------------------------------------------------------------------------------------*/
+.detallesContenido {
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px; 
+	cursor: default;
+	clear: both;
+}
+
+.detallesContenido .portada {
+	float: left;
+	padding: 0px;
+	margin: 0px; 
+	width: 204px;
+	height: auto;
+	overflow: visible;
+	
+	border: 0px;
+	
+}
+
+.detallesContenido .portada img{
+	width: 200px;
+	height: auto;
+	border: 0px;
+}
+
+.detallesContenido h3{
+	color: #FFFFFF;
+	display: block;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: left;	
+	text-decoration: none;
+	margin: 0px;
+	padding: 1px;
+}
+
+.detallesContenido p{
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.detallesContenido p b{
+	color: #FF6633;
+	font-weight: bold;
+}
+
+
+.detallesContenido .trailer{
+	display: block;
+	text-align: center;
+	border: 0px;
+}
+
+..detallesContenido .trailer p{
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* Estilo lista para mostrar captilos de una serie y listar contenidos por categoria, tipo, etc */
+.lista_links {
+	display: block;	
+	border: 0px;
+	border-color: #00FF99;
+	border-style: solid;
+	position: static;
+}
+
+.lista_links h2{
+	display: block;
+	color:#FF6633;
+	font-size: 10pt;
+	font-family: Lucida Sans Unicode;
+	text-align: left;
+	font-style: normal;
+	font-weight: bold;
+	border: 0px;
+	margin: 3px;
+	padding: 0px;
+}
+
+.lista_links a{
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+	font-size: 10pt;
+	font-family: Arial;	
+	overflow: auto;
+}
+.lista_links a:link{
+	display: block;
+	text-decoration: none;
+}
+.lista_links a:visited{
+	display: block;
+	text-decoration: none;	
+}
+.lista_links a:active{
+	display: block;
+	text-decoration: none;	
+}
+
+.lista_links a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #FF6600;
+}
+
+
+
+.lista_links a img{
+	display: block;
+	float: left;
+	text-decoration: none;
+	text-align: left;
+	border: 0px;
+	width: 50px;
+	height: auto;
+	margin: 3px;
+}
+
+.lista_links a img:link{
+}
+.lista_links a img:visited{
+}
+.lista_links a img:active{
+}
+.lista_links a img:hover{
+}
+
+.lista_links a.editar {
+	display: block;
+	float:right;
+	width: 32px;
+	height: 32px;
+	text-decoration: none;
+	overflow: auto;	
+ 	background: url('/ServletFinalJava/img/pencil_edit.png') no-repeat top right;
+	
+	position: relative;
+	top: 25px;
+	left: -50px;
+}
+
+.lista_links a.editar:link{
+	text-decoration: none;
+}
+.lista_links a.editar:visited{
+	text-decoration: none;
+}
+.lista_links a.editar:active{
+	text-decoration: none;
+}
+
+.lista_links a.editar:hover{
+	text-decoration: none;
+}
+
+/* Estilos propios para seccion REGISTRAR NUEVO USUARIO.--------------------------------------------------------------------------------------------------*/
+.recuadroPlanes {
+	display: block;
+	float: left;
+	text-align: left;
+	width: 230px;
+	height:160px;
+	border: 0px;
+	border-color: #F2B800;
+	border-style: solid;
+	color: #FF6633;
+}
+.recuadroPlanes img {
+	float:left;
+	width: 55px;
+	height: auto;
+	padding:10px;
+	border: 0px;
+}
+
+.recuadroPlanes ul li {
+	list-style: none;
+}
+
+/* Estilos propios para seccion REGISTRAR NUEVA CONTENIDO.--------------------------------------------------------------------------------------------------*/
+
+.recuadroTipoContenido {
+	display: block;
+	float: left;
+	text-align: left;
+	width: 230px;
+	height:60px;
+	border: 0px;
+	border-color: #F2B800;
+	border-style: solid;
+	color: #FF6633;
+}
+
+.recuadroTipoContenido img {
+	float:left;
+	height: 60px;
+	height: auto;
+	padding: 5px;
+	border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos propios para JSP Mensaje Operacion Exitosa y JSP Alquileres----------------------------------------------------------------------------------------*/
+
+.recuadroMensaje {
+	display: block;
+	text-align: center;
+	width: 330px;
+	height: 60px;
+	border: 1px;
+	border-color: #F2B800;
+	border-style: solid;
+	color: #FF6633;
+}
+
+.recuadroMensaje h2{
+	font-size: 11pt;
+	text-align: center;
+	margin-top: 18px;
+	margin-bottom: 16px;
+}
+
+
+
+
+
+
+.botmenu {
+	overflow: hidden; 
+	width: 730px;
+	height: 382px; 
+	border: 0px;
+	padding: 0px;
+
+}
+
+.botmenu a.aero{
+	display: block;
+	float: left;
+	border-color: #FF6633;
+	font-family: verdana;
+	font-size:  13px; 
+	font-weight: bold;
+	line-height: 40px; 
+	height: 41px; 
+	padding-left: 9px; 
+	padding-right: 8px; 
+	text-decoration: none;
+	margin-right: 1px; 
+}
+
+.botmenu a.aero:link{
+	border-color: #FF6633;
+}
+
+.botmenu a.aero:visited{
+	border-color: #151515;
+}
+
+.botmenu a.aero:active{
+	border-color: #ffffff;
+}
+
+.botmenu a.aero:hover{
+	border-color: #151515;
+}
+
+.botmenu a.aero h4{
+	color: #FF6633;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: center;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+/*  esto se va*/
+.botmenu .sepbot{
+	border-left-width: 0px;
+	border-right-width: 2px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-color: #E0F8E0;
+	border-style: solid;
+}
+
+
+/* Estilo Mensajes de ERROR*/
+
+.msjError {
+	display: block;
+	font-family: Arial;
+	color: #FF2828;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px;
+	padding: 1px;
+}
+
+/* Estilo botones submit*/
+.botns{
+  display: block;
+  border: 1px;
+  border-color: #FF6633;
+  border-style: solid;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: middle;
+  text-decoration: none;
+  background: #333333;
+}
+
+/*Estilo de la cabezera*/
+
+.cabezeraweb {
+	width: 940px;
+	height: 150px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+.cabezeraweb a img {
+	text-decoration: none;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.cabezeraweb a:link img{
+	text-decoration: none;
+}
+.cabezeraweb a:visited img{
+	text-decoration: none;
+}
+.cabezeraweb a:active img{
+	text-decoration: none;
+}
+
+.cabezeraweb a:hover img{
+	text-decoration: none;	
+}
+
+
+.cabezeraweb .busqueda {
+	float: right;
+	width: 308px;
+	height: 26px;
+	text-align: left;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	
+	position: absolute;
+	top: 115px;
+	right: 10px;
+	background: url('/ServletFinalJava/img/campobusqueda.png') no-repeat top left;
+}
+
+.cabezeraweb .busqueda .campobusqueda {
+	float: left;
+	display: block;
+	font-size: 10pt;
+	border: 0px;
+	padding: 0px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	margin-left: 3px;
+	margin-right: 4px;
+}
+
+.cabezeraweb .busqueda .campotipo {
+	font-size: 10pt;
+	border: 0px;
+	padding: 0px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.cabezeraweb .busqueda .botonbusqueda {
+	float: right;
+	width: 32px;
+	height: 26px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	background: url('/ServletFinalJava/img/botonbusqueda.png') no-repeat top left;
+	position: absolute;
+}
+
+/* copyright de la pagina */
+.copyrightpage {
+height: 20px;
+border:0px;
+padding: 0px;
+margin-left: 0px; 
+margin-right: 10px; 
+margin-top: 6px;
+margin-bottom: 2px;
+color:#ffffff;
+text-align: center;
+font-size: 9pt;
+font-family:Arial;
+}
