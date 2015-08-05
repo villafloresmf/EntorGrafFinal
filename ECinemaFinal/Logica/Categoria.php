@@ -167,16 +167,16 @@ namespace ECinema\Datos {
 		protected function OperacionesModificar(/*MySQLAccess*/ $mysql, /*boolean*/ $block)
 		{
 			try {			
-// 			Connection connection = mysql.getConnection();
-			$connection = mysql.getConnection();
-// 			PreparedStatement prepareStatement = connection.prepareStatement(
-			$prepareStatement = $connection->prepareStatement(
-			"Update `javatp`.`categorias`"
-					+ "SET descripcion=? WHERE id_categoria=?;");
-					prepareStatement.setString(1, $this->descripcion);
-					prepareStatement.setInt(2, $this->ID);
-					prepareStatement.executeUpdate();
-			} catch (SQLException $e) {
+	// 			Connection connection = mysql.getConnection();
+				$connection = $mysql->getConnection();
+	// 			PreparedStatement prepareStatement = connection.prepareStatement(
+				$prepareStatement = $connection->prepare("Update ecinema.categorias SET descripcion=? WHERE id_categoria=?;");
+				$prepareStatement->bindParam(1, $this->descripcion,\PDO::PARAM_STR);
+				$prepareStatement->bindParam(2, $this->ID,\PDO::PARAM_INT);
+				if(!$prepareStatement->execute()){
+					
+				}
+			} catch (\PDOException $e) {
 				throw $e;
 			}					
 		}
@@ -200,7 +200,7 @@ namespace ECinema\Datos {
 				$cstm = null;
 			} catch (Exception $ex) {
 				/*do nothing??*/
-				System.out.println($ex.getMessage());
+				print_r($ex.getMessage());
 			} finally {
 				$mysql->close();
 			}
@@ -240,7 +240,7 @@ namespace ECinema\Datos {
 							$lista->set($categoria->getID(),$categoria);
 						}
 					} catch (Exception $ex) {
-						printf("Error armando lista de entidades: %s\n", $ex.getMessage());
+						printf("Error armando lista de entidades: %s\n", $ex->getMessage());
 					}
 				}
 			} catch (\PDOException $e) {
@@ -253,14 +253,13 @@ namespace ECinema\Datos {
 		{
 			try {
 // 				Connection connection = mysql.getConnection();
-				$connection = mysql.getConnection();
+				$connection = $mysql->getConnection();
 // 				PreparedStatement prepareStatement = connection.prepareStatement(
-				$prepareStatement = $connection->prepareStatement(
-				"Update `javatp`.`categorias` SET borrado=? WHERE id_categoria=?;");
-				$prepareStatement->setBoolean(1, true);
-				$prepareStatement->setInt(2, $this->ID);
-				$prepareStatement->executeUpdate();
-			} catch (SQLException $e) {
+				$prepareStatement = $connection->prepare("Update ecinema.categorias SET borrado=? WHERE id_categoria=?;");
+				$prepareStatement->bindParam(1, true,\PDO::PARAM_BOOL);
+				$prepareStatement->bindParam(2, $this->ID,\PDO::PARAM_INT);
+				$prepareStatement->execute();
+			} catch (\PDOException $e) {
 				throw $e;
 			}
 		}

@@ -62,7 +62,7 @@
 					</div>
                 </div>
             	</div>
-            <!-- < ?php include(copyright.html) ?>  -->
+            <?php include(copyright.html) ?>
         </div>
 </body>
 </html>

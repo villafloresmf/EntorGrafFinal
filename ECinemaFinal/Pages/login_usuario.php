@@ -9,7 +9,7 @@
 	<div align='center'>
 		<div id='recuadro_princ'>
 
-			<jsp:include page="cabecera.jsp" />
+			<!-- < ? include('cabecera.php'); ?>  -->
 			<div id='cont_central'>
 				<!-- < ? include("navBar.php") ?> -->
 				<div id='columnaDercha' class='columnaDer'>
@@ -93,7 +93,7 @@
 				</div>
 			</div>
 		</div>
-		<jsp:include page="copyright.html" />
+		<? include('footer.php'); ?>
 	</div>
 </body>
 </html>

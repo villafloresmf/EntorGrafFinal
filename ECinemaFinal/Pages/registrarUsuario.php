@@ -38,7 +38,8 @@
 <body>
 <div align='center'>
 	<div id='recuadro_princ'>
-		<jsp:include page="cabecera.jsp" />
+		<!-- < ? include('cabecera.php'); ?>  -->
+		
 		<div id='cont_central'>
 
 			<div id='columan_derecha' class='columnaDer'>
@@ -241,9 +242,9 @@
 			<!-- FIN FORMULARIO DE NUEVO USUARIO --------------------------------------------------------------------------------- -->
         
 			</div>
-			<jsp:include page="menucostado.jsp" />
+			<!-- < ?php include("navBar.php") ?> -->
 		</div>
-		<jsp:include page="copyright.html" />
+		<? include('footer.php'); ?>
 	</div>
 </div>
 </body>

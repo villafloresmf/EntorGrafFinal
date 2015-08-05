@@ -377,7 +377,7 @@ use ECinema\CrossCutting\ECinema\CrossCutting;
 			foreach ($results as $rs){
 				$jSonList .= json_encode(["ID" => $rs->ID, "Description" => $rs->getNombre()]) . ",";
 			}
-			$jSonList .= "]";
+			$jSonList = substr($jSonList, 0,-1) . "]";
 			return $jSonList;
 		}
 	}

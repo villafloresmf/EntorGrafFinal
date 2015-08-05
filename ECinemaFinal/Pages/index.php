@@ -8,9 +8,9 @@
     <body>
         <div align='center'>
             <div id='recuadro_princ'>
-                <jsp:include page="cabecera.jsp" />
+                <!-- < ? include('cabecera.php'); ?>  -->
                 <div id='cont_central'>
-                    <jsp:include page="menucostado.jsp" />
+                    <!-- < ?php include("navBar.php") ?> -->
                     <div id='mas_vistos' class='columnaDer'>
                         <div id='top_titulo'>
                             Extrenos Peliculas
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <jsp:include page="copyright.html" />
+            <? include('footer.php'); ?>
         </div>
     </body>
 </html>
