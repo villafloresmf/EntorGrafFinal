@@ -56,7 +56,7 @@ try {
 <?php }  ?>
 <script type="text/javascript">
 	var objectParameters = $.getObjectParameters(document.location.search + "&accion=EditarContenido");
-	AjaxRequestPostWithHandler(JSON.stringify(objectParameters),"../Logica/Controller.php",ContenidoBindingForEdit)
+	AjaxRequestPostWithHandler(JSON.stringify(objectParameters),"../Logica/Controller.php",ContenidoBindingForEdit);
 </script>
 </head>
     <body>

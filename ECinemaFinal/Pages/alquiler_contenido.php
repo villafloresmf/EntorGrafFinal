@@ -9,7 +9,7 @@
     try {
 //         HttpSession sesion = request.getSession();
 //         UsuarioLogica 
-        $ul = (UsuarioLogica) sesion.getAttribute("usuario");
+        //$ul = (UsuarioLogica) sesion.getAttribute("usuario");
         //verificar que pueda alquilar o redirigir
 //         String 
         $id = (String) request.getParameter("id");
@@ -47,10 +47,10 @@
             <div id='recuadro_princ'>
                 <!-- < ? include('cabecera.php'); ?>  -->
                 <div id='cont_central'>
-                    <jsp:include page="menucostado.jsp" />
+                    <!-- < ?php include("navBar.php") ?> -->
                     <div id='ventana_ver_contenido' align='center' class='columnaDer'>
             <div class='seccion'>
-                <h2>Ver <%= cont.getNombre()%></h2>
+                <h2>Ver <?= cont.getNombre() ?></h2>
                 <%
                     if (puede_alquilar) { //Puedo hacer un nuevo alquiler
                 %>

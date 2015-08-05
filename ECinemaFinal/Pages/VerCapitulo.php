@@ -67,7 +67,7 @@ try {
                                     </tr>
                                     <tr>
                                         <td valign='middle' align='right' colspan='2'>
-                                            <form id='ver_capitulo_serie' action='alquiler_contenido.jsp' method='post'>
+                                            <form id='ver_capitulo_serie' action='alquiler_contenido' method='post'>
                                                 <input type='hidden' name='id' value='' />
                                                 <input type='submit' value='VER ESTE CAPITULO' align='right' class='botns'  />
                                             </form>

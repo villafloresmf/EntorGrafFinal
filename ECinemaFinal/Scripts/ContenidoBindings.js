@@ -62,8 +62,8 @@ function ContenidoBindingForView(stringObject){
 function ContenidoBindingForViewCapitulo(stringObject){
 	debugger;
 	var jSonObject = JSON.parse(stringObject);
-	var formElement = $("#dtoscontenido");
-	formElement.find("span[id='fechaEstreno']").text(jSonObject.Duracion);
+	var formElement = $("#datoscontenido");
+	formElement.find("span[id='fechaEstreno']").text(jSonObject.FechaEstreno);
 	formElement.find("h3").text(jSonObject.NombreCapitulo);
 	formElement.find("#img_capitulo").attr("src",jSonObject.Imagen).attr("title",jSonObject.NombreCapitulo).attr("alt","Portada de " + jSonObject.NombreCapitulo);
 	$("#ver_capitulo_serie").find("input[name='id']").attr("value",jSonObject.ID);
@@ -78,5 +78,21 @@ function ContenidoBindingForViewCapitulo(stringObject){
 	} else {
 		seccionElement.find("#trailer").append("value",jSonObject.Trailer);
 	}
+}
+
+function ContenidoBindingForEditCapitulo(stringObject){
+	debugger;
+	var jSonObject = JSON.parse(stringObject);
+	var formElement = $("#datoscontenido");
+	formElement.find("#titulo_serie").val(jSonObject.Nombre);
+	formElement.find("#titulo_cap").val(jSonObject.NombreCapitulo);
+	formElement.find("#fechaEstreno").val(jSonObject.FechaEstreno);
+	formElement.find("#img_cap").attr("src",jSonObject.Imagen).attr("title",jSonObject.NombreCapitulo).attr("alt","Portada de " + jSonObject.NombreCapitulo);
+	if(jSonObject.Trailer != null){
+		formElement.find("#trailer").val(jSonObject.Trailer);
+	}
+	formElement.find("#url").val(jSonObject.Url);
+	
+	$("#borrar_contenido").find("input[name='id']").attr("value",jSonObject.ID);
 }
 
